@@ -1,9 +1,9 @@
 === Comunas de Chile para WooCommerce ===
 Contributors: AndresReyesDev
-Tags: woocommerce, chile, comunas, shipping, checkout, webpay
-Requires at least: 3.0
+Tags: woocommerce, chile, comunas, shipping, checkout
+Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2024.12.08
+Stable Tag: 2026.01.25
 Requires PHP: 7.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -15,13 +15,17 @@ Agrega las Comunas de Chile a WooCommerce para mejorar la experiencia de envío.
 Este plugin permite:
 - Modificar el nombre del campo "State" por "Comuna".
 - Añadir la lista completa de las 346 comunas de Chile para optimizar la experiencia de compra.
-- Compatibilidad declarada con WooCommerce 8.7 y bloques de carrito y checkout.
+- **Compatible con el Checkout Clásico y el nuevo Checkout de Bloques de WooCommerce.**
+- Compatibilidad declarada con WooCommerce HPOS y bloques de carrito/checkout.
 
 == Features ==
 
 1. Soporte oficial para las 346 comunas de Chile, basado en datos oficiales del Gobierno de Chile.
-2. Notificación en el área de administración con opciones adicionales para activar servicios de envío.
-3. Elimina campos irrelevantes como el código postal en Chile.
+2. **Compatible con el nuevo Checkout de Bloques de WooCommerce** (introducido en WC 8.3+).
+3. Compatible con el checkout clásico de WooCommerce.
+4. Notificación en el área de administración con opciones adicionales para activar servicios de envío.
+5. Elimina campos irrelevantes como el código postal en Chile.
+6. Declaración de compatibilidad con HPOS (High-Performance Order Storage).
 
 == Installation ==
 
@@ -44,6 +48,17 @@ La notificación se puede desactivar haciendo clic en el botón "Cerrar" o vía 
 
 == Changelog ==
 
+= 2026.01.25 =
+- **NUEVO: Compatibilidad completa con el Checkout de Bloques de WooCommerce.**
+- Integración con WooCommerce Blocks API para modificar campos dinámicamente.
+- El código postal se oculta automáticamente para Chile en ambos tipos de checkout.
+- Corregido typo en nombre de archivo principal (woocoomerce → woocommerce).
+- Agregada verificación de que WooCommerce esté activo antes de inicializar.
+- Mejorada seguridad: sanitización de nonce y verificación de capacidades de usuario.
+- Removida dependencia de archivo JS externo inexistente.
+- Agregado Text Domain propio para internacionalización.
+- Actualizada compatibilidad: WordPress 6.7, WooCommerce 9.5.
+
 = 2024.12.08 =
 - Nueva versión con mejoras visuales en las notificaciones administrativas.
 - Compatibilidad confirmada con WooCommerce 8.7.
@@ -60,5 +75,5 @@ La notificación se puede desactivar haciendo clic en el botón "Cerrar" o vía 
 
 == Upgrade Notice ==
 
-= 2024.12.08 =
-Actualiza a esta versión para asegurar compatibilidad con las versiones más recientes de WordPress y WooCommerce.
+= 2026.01.25 =
+Actualización de seguridad importante. Incluye correcciones de sanitización, verificación de WooCommerce y compatibilidad con las versiones más recientes.
